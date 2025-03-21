@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: oletalk/hello-world-composite-action@v1
+        uses: ./.github/actions/hello-world-composite-action
         with:
           who-to-greet: 'Marvin the Octocat'
       - run: echo random-number "$RANDOM_NUMBER"
